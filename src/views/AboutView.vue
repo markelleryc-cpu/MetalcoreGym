@@ -1,14 +1,8 @@
-```vue
-<template>
-  <section class="about">
-  </section>
-</template>
+<script setup lang="ts">
+import AboutSection from '@/section/AboutSection.vue';
 
-<style scoped>
-.about {
-  height: 100vh;
-  max-width: 100vw;
-  background-color: black;
-}
-</style>
-```
+</script>
+
+<template>
+  <AboutSection/>
+</template>

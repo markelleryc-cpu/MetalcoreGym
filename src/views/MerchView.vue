@@ -1,12 +1,8 @@
-<template>
-  <section class="merch">
-  </section>
-</template>
+<script setup lang="ts">
+import MerchSection from '@/section/MerchSection.vue';
 
-<style scoped>
-.merch {
-  height: 100vh;
-  max-width: 100vw;
-  background-color: black;
-}
-</style>
+</script>
+
+<template>
+  <MerchSection/>
+</template>
