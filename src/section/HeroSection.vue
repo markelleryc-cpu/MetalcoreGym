@@ -1,4 +1,3 @@
-```vue
 <template>
   <section class="hero" id="home">
     <div class="container">

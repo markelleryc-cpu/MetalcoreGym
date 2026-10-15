@@ -1,19 +1,34 @@
 <template>
-  <nav class="navbar">
+  <section class="navbar">
     <div class="logo">
-      <img src="@/assets/image/mclogo.jpg" alt="Metal Core Logo" />
+      <a @click="scrollToSection('home')">
+        <img src="@/assets/image/mclogo.png" alt="Metal Core Logo" /></a>
     </div>
 
     <div class="menu">
-      <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/merch">Merch</RouterLink>
+      <RouterLink to="/equipment">Equipment</RouterLink>
     </div>
-  </nav>
+  </section>
 </template>
 
-<script setup lang="ts">
-import { RouterLink } from 'vue-router'
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const scrollToSection = async (id) => {
+  if (router.currentRoute.value.path !== '/') {
+    await router.push('/')
+  }
+
+  setTimeout(() => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  })
+}
 </script>
 
 <style scoped>
@@ -22,22 +37,18 @@ import { RouterLink } from 'vue-router'
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: dimgray;
   color: white;
   border-bottom: 1px solid dimgray;
+  gap: 30px;
 }
 .logo {
-  width: 60px;
-  height: 60px;
-
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  
+  img {
+  width: 100px;
+  height: 100px;
+  }
 }
 
 
@@ -50,7 +61,9 @@ import { RouterLink } from 'vue-router'
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .menu a.router-link-active {
