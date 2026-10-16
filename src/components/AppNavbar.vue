@@ -39,7 +39,7 @@ const scrollToSection = async (id) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: dimgray;
+  background-color: rgba(105, 105, 105, 0.8);
   color: white;
   border-bottom: 1px solid dimgray;
   gap: 30px;
