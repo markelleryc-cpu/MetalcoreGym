@@ -8,7 +8,9 @@
     </div>
 
     <div class="menu">
-      <RouterLink to="/about">About</RouterLink>
+
+      <RouterLink to="/coach">Coaches</RouterLink>
+      <RouterLink to="/equipment">Equipment</RouterLink>
 
       <div class="dropdown">
         <RouterLink to="/merch">Merch ▿</RouterLink>
@@ -23,7 +25,7 @@
         </div>
       </div>
 
-      <RouterLink to="/equipment">Equipment</RouterLink>
+      <RouterLink to="/membership">Membership</RouterLink>
     </div>
   </section>
 </template>
