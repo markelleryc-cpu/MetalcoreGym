@@ -23,15 +23,17 @@
   align-items: center;
   justify-content: center;
   padding: 120px 6% 40px;
-  background-color: grey;
+  background-color: #1A1A1A;
   color: whitesmoke;
 }
 
 .container {
   width: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1A1A1A;
 }
 
 .text {

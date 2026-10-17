@@ -7,7 +7,7 @@
 .equipment{
       height: 100vh;
      max-width: 100vw;
-     background-color: black;
+     background-color: #1A1A1A;;
 }
 
 </style>

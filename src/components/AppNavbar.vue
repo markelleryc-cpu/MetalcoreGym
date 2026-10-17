@@ -1,13 +1,28 @@
+
 <template>
   <section class="navbar">
     <div class="logo">
       <a @click="scrollToSection('home')">
-        <img src="@/assets/image/mclogo.png" alt="Metal Core Logo" /></a>
+        <img src="@/assets/image/merchImg/mclogo.png" alt="Metal Core Logo" />
+      </a>
     </div>
 
     <div class="menu">
       <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/merch">Merch</RouterLink>
+
+      <div class="dropdown">
+        <RouterLink to="/merch">Merch ▿</RouterLink>
+
+        <div class="submenu-merch">
+          <a @click="scrollToMerchSection('merch')">
+            Official Merchandise
+          </a>
+          <a @click="scrollToMerchSection('bundle')">
+            Bundles & Packages
+          </a>
+        </div>
+      </div>
+
       <RouterLink to="/equipment">Equipment</RouterLink>
     </div>
   </section>
@@ -21,6 +36,18 @@ const router = useRouter()
 const scrollToSection = async (id) => {
   if (router.currentRoute.value.path !== '/') {
     await router.push('/')
+  }
+
+  setTimeout(() => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  })
+}
+
+const scrollToMerchSection = async (id) => {
+  if (router.currentRoute.value.path !== '/merch') {
+    await router.push('/merch')
   }
 
   setTimeout(() => {
@@ -43,19 +70,24 @@ const scrollToSection = async (id) => {
   color: white;
   border-bottom: 1px solid dimgray;
   gap: 30px;
-}
-.logo {
-  img {
-  width: 100px;
-  height: 100px;
-  }
+  z-index: 1000;
 }
 
+.logo {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 .menu {
   display: flex;
   align-items: center;
   gap: 25px;
+}
+
+.dropdown {
+  position: relative;
 }
 
 .menu a {
@@ -70,7 +102,34 @@ const scrollToSection = async (id) => {
   color: red;
 }
 
+.submenu-merch {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  flex-direction: column;
+  background-color: #292929;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  padding: 6px 0;
+}
 
+.dropdown:hover .submenu-merch {
+  display: flex;
+}
+
+.submenu-merch a {
+  display: block;
+  padding: 12px 16px;
+  font-size: 14px;
+  text-transform: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.submenu-merch a:hover {
+  background-color: #3b3b3b;
+  color: red;
+}
 
 @media (max-width: 768px) {
   .navbar {
@@ -86,12 +145,22 @@ const scrollToSection = async (id) => {
     width: 40px;
     height: 40px;
   }
+
   .menu {
     gap: 12px;
   }
 
   .menu a {
     font-size: 14px;
+  }
+
+  .submenu-merch {
+    min-width: 170px;
+  }
+
+  .submenu-merch a {
+    font-size: 12px;
+    padding: 12px;
   }
 }
 </style>

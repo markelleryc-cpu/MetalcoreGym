@@ -3,7 +3,7 @@
   <section class="introduction" id="intro">
     <div class="container">
       <div class="image">
-        <img src="@/assets/image/gymImg.jpg" alt="Strength training at the gym"/>
+        <img src="@/assets/image/merchImg/gymImg.jpg" alt="Strength training at the gym"/>
       </div>
 
       <div class="text">
@@ -47,6 +47,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 50px;
+  background-color: #1A1A1A;
 }
 
 .image img {

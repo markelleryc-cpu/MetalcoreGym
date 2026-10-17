@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import MerchSection from '@/section/MerchSection.vue';
+import BundlesSection from '@/section/BundlesSection.vue';
+import OfficialMerchSec from '@/section/OfficialMerchSec.vue';
+
+
 
 </script>
 
-<template>
-  <MerchSection/>
+<template> 
+  <div>
+    <OfficialMerchSec/>
+    <BundlesSection/>
+  </div>
 </template>
