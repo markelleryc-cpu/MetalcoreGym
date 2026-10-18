@@ -67,6 +67,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius:5px
 }
 
 @media (max-width: 768px) {

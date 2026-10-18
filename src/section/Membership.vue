@@ -221,7 +221,7 @@
     padding: 120px 25px 40px; 
 
     h3{
-        color: red;
+        color: crimson;
     }
     h1{
         color: white;
@@ -245,7 +245,7 @@
         color: white;
     }
     h2{
-        color: red;
+        color: crimson;
     }
 }
 
@@ -365,7 +365,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: red;
+    color: crimson;
     margin-top: 70px;
 }
 

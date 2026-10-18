@@ -101,7 +101,7 @@ const scrollToMerchSection = async (id) => {
 }
 
 .menu a.router-link-active {
-  color: red;
+  color: crimson;
 }
 
 .submenu-merch {
@@ -130,7 +130,7 @@ const scrollToMerchSection = async (id) => {
 
 .submenu-merch a:hover {
   background-color: #3b3b3b;
-  color: red;
+  color: crimson;
 }
 
 

@@ -63,7 +63,7 @@
     padding: 120px 25px 40px; 
 
     h3{
-        color: red;
+        color: crimson;
     }
     h1{
         color: white;
@@ -79,6 +79,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    
 
     .coaches{
         display: flex;
