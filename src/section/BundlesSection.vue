@@ -56,9 +56,9 @@
 
 <style scoped>
 .bundle {
-  min-height: 100vh; 
-  width: 100%; 
-  background-color: #1A1A1A; 
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1A1A1A;
 }
 
 .container {
@@ -66,21 +66,20 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   flex-direction: column;
   background-color: #1A1A1A;
-  padding: 120px 25px 40px; 
-  box-sizing: border-box; 
+  padding: 120px 25px 40px;
+  box-sizing: border-box;
 }
 
 .grid-container {
   width: 100%;
-  min-height: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; 
-  align-items: center; 
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
   background-color: #1A1A1A;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .title {
@@ -88,9 +87,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; 
-  margin-bottom: 40px; 
-  gap: 10px; 
+  text-align: center;
+  margin-bottom: 40px;
+  gap: 10px;
 }
 
 .title h2 {
@@ -103,40 +102,43 @@
 
 .bundle-card {
   display: flex;
-  width: 100%; 
-  background-color: #080808; 
+  width: 100%;
+  min-height: 100%;
+  background-color: #080808;
   flex-direction: column;
   justify-content: flex-start;
+
+  
   align-items: center;
-  padding: 12px; 
-  border-radius: 12px; 
-  border: 1px solid #383838; 
-  box-sizing: border-box;  
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #383838;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .image {
-  width: 100%; 
-  height: 190px; 
-  display: flex; 
+  width: 100%;
+  height: 190px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bundle-card img {
-  max-height: 100%; 
-  max-width: 100%; 
+  max-height: 100%;
+  max-width: 100%;
   object-fit: contain;
-  
 }
 
 .text {
   width: 100%;
   text-align: center;
-  padding: 12px 4px 4px; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  gap: 8px; 
+  padding: 12px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .bundle-card h1 {
@@ -145,16 +147,16 @@
 }
 
 .bundle-card p {
-  font-size: 11px; 
+  font-size: 11px;
   text-align: center;
-  color: grey; 
+  color: grey;
   line-height: 1.4;
 }
 
 .bundle-card .price {
-  font-size: 16px; 
-  color: crimson; 
-  margin-top: 4px; 
+  font-size: 16px;
+  color: crimson;
+  margin-top: 4px;
 }
 
 h1 {
@@ -163,7 +165,7 @@ h1 {
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
   }
 }
 

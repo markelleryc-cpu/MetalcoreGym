@@ -101,7 +101,7 @@
 .title{
     width: 100%;
     min-height: 100%;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .title h2{
@@ -201,6 +201,50 @@
 h1{
     color: white
 }
+
+@media (max-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .grid-container{
+        margin-top: 20px;
+    
+    }
+
+    .title{
+        margin-top: 0;
+    }
+   
+
+    .btn{
+        width:100px;
+        margin-top: 50px;
+        align-items: center;
+        
+
+    }
+     .btn button{
+        width:100px;
+        height: 100%;
+        margin-top: 10px;
+        font-size: 10px;
+        
+
+        
+    }
+
+
+
+
+
+    .grid-container{
+        grid-template-columns:1fr ;
+    }
+}
+
+
 
 
 
