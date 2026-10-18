@@ -133,36 +133,32 @@ const scrollToMerchSection = async (id) => {
   color: red;
 }
 
+
 @media (max-width: 768px) {
-  .navbar {
-    height: 90px;
-    padding: 10px 4%;
-  }
+    .navbar {
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+    }
 
-  .logo {
-    gap: 8px;
-  }
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
 
-  .logo img {
-    width: 40px;
-    height: 40px;
-  }
+    .menu {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap  
+    }
 
-  .menu {
-    gap: 12px;
-  }
-
-  .menu a {
-    font-size: 14px;
-  }
-
-  .submenu-merch {
-    min-width: 170px;
-  }
-
-  .submenu-merch a {
-    font-size: 12px;
-    padding: 12px;
-  }
+    .menu a {
+        font-size: 14px;
+    }
 }
+
 </style>

@@ -306,6 +306,7 @@
         display: flex;
         background-color: #080808; 
         flex-direction: row;
+        justify-content: space-between;
         padding: 12px; 
         border-radius: 12px; 
         border: 1px solid #383838; 
@@ -339,6 +340,7 @@
         display: flex;
         background-color: #080808; 
         flex-direction: row;
+        justify-content: space-between;
         padding: 12px; 
         border-radius: 12px; 
         border: 1px solid #383838; 

@@ -23,7 +23,9 @@
   align-items: center;
   justify-content: center;
   padding: 120px 6% 40px;
-  background-color: #1A1A1A;
+  background-image: url('@/assets/image/home.png');
+  background-size: cover;
+  background-position: center;
   color: whitesmoke;
 }
 
@@ -33,7 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1A1A1A;
 }
 
 .text {

@@ -112,4 +112,19 @@
 
 }
 
+@media (max-width: 768px){
+
+    .heading{
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        line-height: 30px;
+    }
+}
+
 </style>
