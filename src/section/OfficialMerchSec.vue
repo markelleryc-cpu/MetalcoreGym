@@ -160,7 +160,6 @@
   border-radius: 12px; 
   border: 1px solid #383838; 
   box-sizing: border-box;  
-  overflow: hidden;
 }
 
 .image {
@@ -174,8 +173,6 @@
 .merch-card img {
   max-height: 100%; 
   max-width: 100%; 
-  object-fit: contain;
-  
 }
 
 .text {

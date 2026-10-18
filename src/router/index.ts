@@ -1,5 +1,6 @@
 import CoachView from '@/views/CoachView.vue'
-import Equipmentview from '@/views/Equipmentview.vue'
+import Equipmentview from '@/views/EquipmentView.vue'
+
 import HomeView from '@/views/HomeView.vue'
 import MembershipView from '@/views/MembershipView.vue'
 import MerchView from '@/views/MerchView.vue'
@@ -24,7 +25,7 @@ const router = createRouter({
     {
     path: '/equipment',
     name: 'equipment',
-    component: Equipmentview,
+    component:Equipmentview ,
   },
   {
     path: '/membership',
