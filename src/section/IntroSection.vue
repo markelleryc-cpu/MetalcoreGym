@@ -37,15 +37,12 @@
         <h1>MORE THAN JUST A GYM</h1>
 
         <p class="description">
-          Metal Core is built around strength, discipline, and consistency.
-          We believe that progress comes from showing up, working hard, and
-          staying committed to your goals.
+          Metal Core Fitness has been helping people become stronger and 
+          achieve their fitness goals for over five years. With experienced coaches with more than 13 years in the fitness industry, we’ve guided countless clients through their own transformations.
         </p>
 
         <p class="description">
-          Whether you are starting your fitness journey or improving your
-          strength, Metal Core is a place to challenge yourself and keep
-          moving forward.
+          In 2024, Metal Core Fitness expanded to Jaro, conveniently located in front of Robinsons Jaro, bringing quality equipment, experienced coaching, and premium training within reach, all at an affordable price.
         </p>
       </div>
 
