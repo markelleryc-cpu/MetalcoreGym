@@ -88,6 +88,10 @@ h2 {
     gap: 30px;
   }
 
+  .text{
+    text-align: center;
+  }
+
   .image img {
     height: 300px;
   }

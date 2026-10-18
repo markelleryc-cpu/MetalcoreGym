@@ -368,4 +368,38 @@
     color: red;
     margin-top: 70px;
 }
+
+@media (max-width: 768px){
+    .headings{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .card{
+        text-align: center;
+    }
+
+
+    .containerJaro{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        font-size: 12px;
+
+        img{
+            height: 100px;
+        }
+    }
+
+    .coaching{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pricing{
+                display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
 </style>
